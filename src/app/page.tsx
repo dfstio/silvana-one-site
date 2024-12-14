@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="min-h-screen bg-black text-white flex flex-col justify-start gap-[40vh] p-8 md:p-16"
+      className="min-h-screen bg-black text-white flex flex-col justify-between p-8 md:p-16"
       style={{
         backgroundImage: "url(/img/background.svg)",
         backgroundSize: "cover",
@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
         <p className="text-2xl md:text-5xl font-light">Grow wild and free</p>
       </div>
-      <h2 className="text-4xl md:text-6xl lg:text-6xl font-bold leading-tight max-w-3xl">
+      <h2 className="mt-40 text-4xl md:text-6xl lg:text-6xl font-bold leading-tight max-w-3xl">
         Proof of everything engine to scale your business
       </h2>
     </section>
