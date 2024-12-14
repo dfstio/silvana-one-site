@@ -1,17 +1,22 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function Hero() {
   return (
-    <div className="fixed inset-0">
-      <Image
-        src="/img/silvana.png"
-        alt="Silvana"
-        layout="fixed"
-        width={1600}
-        height={900}
-        objectFit="cover"
-        priority
-      />
-    </div>
+    <section
+      className="min-h-screen bg-black text-white flex flex-col justify-start gap-[40vh] p-8 md:p-16"
+      style={{
+        backgroundImage: "url(/img/background.svg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="space-y-4">
+        <h1 className="text-7xl md:text-9xl font-normal tracking-tight">
+          silvana
+        </h1>
+        <p className="text-2xl md:text-5xl font-light">Grow wild and free</p>
+      </div>
+      <h2 className="text-4xl md:text-6xl lg:text-6xl font-bold leading-tight max-w-3xl">
+        Proof of everything engine to scale your business
+      </h2>
+    </section>
   );
 }
