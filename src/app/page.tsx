@@ -7,13 +7,13 @@ export default function Hero() {
         src="/img/background-preview.png"
         alt="Background"
         fill
+        priority
         className="object-cover"
       />
       <Image
         src="/img/background.svg"
         alt="Background"
         fill
-        priority
         className="object-cover"
       />
       <div className="relative z-10 space-y-4">
