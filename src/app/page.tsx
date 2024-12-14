@@ -22,7 +22,7 @@ export default function Hero() {
         </h1>
         <p className="text-2xl md:text-5xl font-light">Grow wild and free</p>
       </div>
-      <h2 className="relative z-10 mt-10 md:mt-40 text-4xl md:text-6xl lg:text-6xl font-bold leading-tight max-w-3xl">
+      <h2 className="z-10 mt-20 mb-20 text-4xl md:text-6xl lg:text-6xl font-bold leading-tight max-w-3xl">
         Proof of everything engine to scale your business
       </h2>
     </section>
