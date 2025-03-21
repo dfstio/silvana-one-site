@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react'
 import {useHistory} from 'react-router-dom'
-import {useFetch, useLocalStorage, getServerUrl} from '@staketab/lib'
+import {useFetch, useLocalStorage} from '@staketab/lib'
 import BackendErrorMessages from './components/backendErrorMessages'
 import './auth.sass'
 
 const Authentication = (props) => {
 	const pageTitle = 'Sign In'
-	const apiUrl = getServerUrl() + '/auth/login'
+		const apiUrl = "https://t.minascan.io/mainnet/api/auth/login";
 	const [password, setPassword] = useState('')
 	const [login, setLogin] = useState('')
 	const [isSuccessfullSubmit, setIsSuccessfullSubmit] = useState(false)

@@ -8,7 +8,6 @@ import Routes from "./routes.jsx";
 import RouteChangeTracker from "./components/routeChangeTracker";
 import {
   ScrollToTop,
-  getServerUrl,
   useLocalStorage,
   SEO,
   OverlayWrapper,
@@ -122,7 +121,7 @@ const App = () => {
           return new Promise((resolve) => {
             originalRequest.__isRetryRequest = true;
             const response = axios
-              .post(getServerUrl() + refreshPath, {
+              .post("https://t.minascan.io/mainnet/api" + refreshPath, {
                 refresh: refreshToken,
               })
               .then((res) => {

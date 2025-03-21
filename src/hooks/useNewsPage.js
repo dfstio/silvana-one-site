@@ -8,7 +8,6 @@ const useNewsPage = () => {
 
   const {
     loading: newsLoading,
-    error: newsError,
     data: newsList = [],
   } = useFlexibleQuery(ALL_NEWS_QUERY, {
     page: page + 1,

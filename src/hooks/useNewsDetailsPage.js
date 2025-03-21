@@ -10,7 +10,6 @@ const useNewsPage = () => {
 
   const {
     loading,
-    error,
     data: newsDetails = {},
   } = useFlexibleQuery(PIECE_OF_NEWS_QUERY, {
     documentId: id,
