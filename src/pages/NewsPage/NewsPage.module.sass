@@ -1,0 +1,38 @@
+@import '../../assets/styles/mixins'
+
+.newsPage
+	padding-top: 24px
+
+.switcher
+	padding-top: 16px
+	margin-bottom: 32px
+	width: 100%
+	border-bottom: 1px solid var(--border-light)
+	@media ( max-width: 768px )
+		padding-top: 4px
+		margin-bottom: 24px
+		border-bottom: none
+
+.cardWrapper
+	@media ( max-width: 551px )
+		padding-bottom: 20px
+		border-bottom: 1px solid var(--shadow-light-1)
+		&:last-of-type
+			border-bottom: none
+			padding: 0
+
+.tileTable, .pagination
+	background-color: transparent
+
+.card
+	min-height: 318px
+	@media ( max-width: 1400px )
+		min-height: 396px
+	@media ( max-width: 1200px )
+		min-height: 345px
+	@media ( max-width: 992px )
+		min-height: 491px
+	@media ( max-width: 768px )
+		min-height: 388px
+	@media ( max-width: 576px )
+		min-height: 251px

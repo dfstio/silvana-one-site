@@ -1,0 +1,51 @@
+@import '../../assets/styles/mixins'
+.auth-container
+    height: 200px
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: center
+    h1
+        margin-bottom: 0
+        font-family: Inter
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        color: var(--text-default)
+        margin-bottom: 4px
+    input
+        width: 100%
+        min-height: 40px
+        +interMedium(16px, var(--text-default))
+        padding: 6px 16px
+        border: 1px solid var(--bg-light)
+        border-radius: 5px
+        outline: none !important
+        background: var(--background-solid-1)
+        background-size: 22px
+        background-position: 10px center
+        background-repeat: no-repeat
+        &::placeholder
+            color: var(--text-disabled)
+        &:hover
+            border: 1px solid var(--text-disabled)
+        &:focus, &:focus &:hover
+            box-shadow: 0 0 0 3px var(--bg-light-blue-8) 
+            border: 1px solid transparent  
+        &:last-child
+            margin-top: 10px
+    button
+        margin-top: 10px
+        padding: 10px 32px
+        border-radius: 7px
+        +interSemiBold(14px, var(--text-inverted))
+        line-height: 20px
+        background-color: var(--blue-action-1)
+        outline: none !important
+        border: none
+        transition: all ease 200ms
+        display: flex
+        align-items: center
+        &:hover
+            background-color: var(--link-active-color)
+            cursor: pointer
