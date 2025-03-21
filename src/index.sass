@@ -1,0 +1,70 @@
+@import './assets/styles/mixins'
+
+.currency
+	+interMedium(10px, var(--text-secondary))
+	text-transform: uppercase
+	letter-spacing: 0.03em
+html
+	line-height: 1.15
+	height: 100%
+	min-height: 100%
+	width: 100%
+	p
+		margin-bottom: 0
+body
+	height: 100%
+	width: 100%
+	line-height: 1.5715
+	margin: 0
+	#root
+		display: flex
+		flex-direction: column
+		height: fit-content
+		min-height: 100%
+.header
+	flex: 0 0 auto
+	background-color: var(--background-solid-1)
+	// @media (max-width: 768px)
+	// 	margin-bottom: 16px
+.headerNoMargin
+	@media (max-width: 768px)
+		margin-bottom: 0
+
+.main-content
+	flex: 1 0 auto
+	padding-bottom: 40px
+.common-main-content
+	background: linear-gradient(180deg, var(--bg-ultralight-7) 0%, rgba(247, 248, 250, 0) 100%) // individual
+	background-size: 100% 452px
+	background-repeat: no-repeat
+.apps-main-content
+	background: transparent
+
+.footer
+	flex: 0 0 auto
+	&>div
+		margin-top: 0
+ul
+	margin-bottom: 0
+#root
+	height: fit-content
+	min-height: 100%
+	width: 100%
+	position: relative
+.container
+	width: 100%
+	max-width: 142rem
+	box-sizing: border-box
+.jRMtza
+	background: rgba(0, 0, 0, 0.5) !important // individual
+.alert-link
+	color: var(--link-active-color)
+	&:hover
+		text-decoration: underline
+		cursor: pointer
+
+.titleSideWrapper
+	display: flex
+	align-items: center
+	gap: 8px
+	flex-wrap: wrap
